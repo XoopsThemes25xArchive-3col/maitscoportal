@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<!-- Theme name -->
+	<!-- Title and meta -->
+	<title><{if $xoops_pagetitle !=''}><{$xoops_pagetitle}> : <{/if}><{$xoops_sitename}></title>
+	<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />	
+	<meta name="robots" content="<{$xoops_meta_robots}>" />
+  <meta name="keywords" content="<{if $xoops_pagetitle !=''}><{$xoops_pagetitle}>, <{/if}><{$xoops_meta_keywords}>" />
+	<meta name="description" content="<{if $xoops_pagetitle !=''}><{$xoops_pagetitle}>, <{/if}><{$xoops_meta_description}>" />
+	<meta name="rating" content="<{$xoops_meta_rating}>" />
+	<meta name="author" content="<{$xoops_meta_author}>" />
+	<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+	<meta name="generator" content="xoops-theme.com" />
+	
+<!-- Rss -->
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="<{xoAppUrl backend.php}>" />
+
+<!-- Favicon -->
+	<link rel="shortcut icon" type="image/ico" href="<{xoImgUrl icons/favicon.ico}>" />
+	<link rel="icon" type="image/png" href="<{xoImgUrl icons/icon.png}>" />
+	
+<!-- Sheet Css -->
+	<link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoAppUrl xoops.css}>" />
+	<link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoImgUrl style.css}>" />
+	
+	<{$xoops_module_header}>
+
+<{if $xoops_dirname != "publisher"}>
+<script type="text/javascript" src="<{$xoops_imageurl}>js/jquery.min.js"></script>
+<{/if}>
+
+<script type="text/javascript" src="<{$xoops_imageurl}>js/jquery-ui.min.js"></script>
+
+<script type="text/javascript">
+   jQuery.noConflict();  
+ jQuery(document).ready(function($){
+  $("#featured > ul").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 5000, true);
+ });
+</script>
+</head>
+<body id="<{$xoops_dirname}>" class="<{$xoops_langcode}>">
+  <noscript><h1><{if $xoops_pagetitle !=''}><{$xoops_pagetitle}><{/if}></h1></noscript>
+</body>
+<body id="<{$xoops_dirname}>" class="<{$xoops_langcode}>">
+  <div id="xo-canvas">
+<table border="0" width="100%">
+	<tr>
+		<td valign="top"><!-- Navigation Menu --><ul id="menu">
+	<li><a href="<{xoAppUrl /}>"><b>Home</b></a></li>
+	<li><a href="<{xoAppUrl /}>"><b>About Us</b></a></li>
+	<li><a class="sub" href="<{xoAppUrl /}>"><b>Our News</b><!--[if gte IE 7]><!--></a><!--<![endif]-->
+	<!--[if lte IE 6]><table><tr><td><![endif]-->
+		<ul>
+			<li><a class="fly" href="<{xoAppUrl /}>">Political News<!--[if gte IE 7]><!--></a><!--<![endif]-->
+			<!--[if lte IE 6]><table><tr><td><![endif]-->
+				<ul>
+					<li><a href="<{xoAppUrl /}>">U.S</a></li>
+					<li><a href="<{xoAppUrl /}>">Middle East</a></li>
+					<li><a href="<{xoAppUrl /}>">Lebanon</a></li>
+					<li><a href="<{xoAppUrl /}>">International</a></li>
+					
+				</ul>
+			<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+			</li>
+			<li ><a class="fly" href="<{xoAppUrl /}>">Money<!--[if gte IE 7]><!--></a><!--<![endif]-->
+			<!--[if lte IE 6]><table><tr><td><![endif]-->
+				<ul>
+					<li><a href="<{xoAppUrl /}>">Markets</a></li>
+					<li><a href="<{xoAppUrl /}>">Small Business</a></li>
+					<li><a href="<{xoAppUrl /}>">Finance</a></li>
+					<li><a href="<{xoAppUrl /}>">Retirement</a></li>
+					<li><a href="<{xoAppUrl /}>">Fortune</a></li>
+				</ul>
+			<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+			</li>
+			<li><a href="<{xoAppUrl /}>">Videos</a></li>
+			<li><a href="<{xoAppUrl /}>">Spotlights</a></li>
+			<li><a class="fly" href="<{xoAppUrl /}>">Sports<!--[if gte IE 7]><!--></a><!--<![endif]-->
+			<!--[if lte IE 6]><table><tr><td><![endif]-->
+				<ul>
+					<li><a href="<{xoAppUrl /}>">NFL</a></li>
+					<li><a href="<{xoAppUrl /}>">MLB</a></li>
+					<li><a href="<{xoAppUrl /}>">NBA</a></li>
+				</ul>
+			<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+			</li>
+		</ul>
+	<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+	</li>
+	<li><a class="sub" href="dropline.html"><b>Tech</b><!--[if gte IE 7]><!--></a><!--<![endif]-->
+	<!--[if lte IE 6]><table><tr><td><![endif]-->
+		<ul>
+			<li><a href="<{xoAppUrl /}>">Laptops</a></li>
+			<li><a href="<{xoAppUrl /}>">Desktops</a></li>
+			<li><a href="<{xoAppUrl /}>">PDAs</a></li>
+			<li><a href="<{xoAppUrl /}>">Digital Cameras</a></li>
+			<li><a href="<{xoAppUrl /}>">MP3 Players</a></li>
+			<li><a href="<{xoAppUrl /}>">Cell Phones</a></li>
+		</ul>
+	<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+	</li>
+	<li><a class="sub" href="flyout.html"><b>Lifestyle</b><!--[if gte IE 7]><!--></a><!--<![endif]-->
+	<!--[if lte IE 6]><table><tr><td><![endif]-->
+		<ul>
+			<li><a href="<{xoAppUrl /}>">Beauty & Fashion</a></li>
+			<li><a href="<{xoAppUrl /}>">Cooking</a></li>
+			<li><a href="<{xoAppUrl /}>">Diet & Fitness</a></li>
+			<li><a href="<{xoAppUrl /}>">Home Styles</a></li>
+		</ul>
+	<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+	</li>
+	<li id="Support"><a href="<{xoAppUrl /}>"><b>Support</b></a></li>
+	<li id="Contact Us"><a href="<{xoAppUrl /}>"><b>Contact</b></a></li>
+</ul>
+ </td>
+	</tr>
+</table>
+<div id="topgrey">
+	<table border="0" width="100%" cellspacing="1">
+		<tr>
+			<td valign="top"><div id="logo1">
+			<a href="<{xoAppUrl /}>"><img src="<{xoImgUrl images/logo.png }>"></a>
+		</div></td>
+			<td><div id="icons"> 
+				<table border="0" width="100%">
+					<tr>
+						<td>
+			<a href="<{xoAppUrl /}>"><img src="<{xoImgUrl icons/home.png }>"></a></td>
+						<td>
+			<a href="<{xoAppUrl /}>"><img src="<{xoImgUrl icons/register.png }>"></a></td>
+						<td>
+			<a href="<{xoAppUrl /}>"><img src="<{xoImgUrl icons/album.png }>"></a></td>
+						<td>
+			<a href="<{xoAppUrl /}>"><img src="<{xoImgUrl icons/videos.png }>"></a></td>
+						<td>
+			<a href="<{xoAppUrl /}>"><img src="<{xoImgUrl icons/contactus.png }>"></a></td>
+						<td>
+			<a href="<{xoAppUrl /}>"><img src="<{xoImgUrl icons/rss.png }>"></a></td>
+					</tr>
+				</table>
+</div></td>
+		</tr>
+	</table>
+	<table border="0" width="100%">
+		<tr>
+			<td valign="top">		<div id="featured">
+		  <ul class="ui-tabs-nav">
+	        <li class="ui-tabs-nav-item ui-tabs-selected" id="nav-fragment-1"><a href="#fragment-1"><img src="<{xoImgUrl img/image1-small.jpg}>" alt="" /><span>Discover Lebanon Civilization: Museums and tourist Places</span></a></li>
+	        <li class="ui-tabs-nav-item" id="nav-fragment-2"><a href="#fragment-2"><img src="<{xoImgUrl img/image2-small.jpg}>" alt="" /><span>Social networks and kids: How young is too young?</span></a></li>
+	        <li class="ui-tabs-nav-item" id="nav-fragment-3"><a href="#fragment-3"><img src="<{xoImgUrl img/image3-small.jpg}>" alt="" /><span>Toyota Yaris - What the Auto Press Says</span></a></li>
+	        <li class="ui-tabs-nav-item" id="nav-fragment-4"><a href="#fragment-4"><img src="<{xoImgUrl img/image4-small.jpg}>" alt="" /><span>Olajuwon makes Bryant's dreams come true</span></a></li>
+	      </ul>
+
+	    <!-- First Content -->
+	    <div id="fragment-1" class="ui-tabs-panel" style="">
+			<img src="<{xoImgUrl img/image1.jpg}>" alt="" />
+			 <div class="info" >
+				<h2><a href="#" >Discover Lebanon Civilization: Museums and tourist Places  </a></h2>
+				<p>Gibran's Museum in the heart of Bsharri.It was originally a monastery transformed into a museum by the Gibran National Committee. the Museum, with its old and new buildings, overlooking the Qadisha valley.
+...<a href="#" >read more</a></p>
+			 </div>
+	    </div>
+
+	    <!-- Second Content -->
+	    <div id="fragment-2" class="ui-tabs-panel ui-tabs-hide" style="">
+			<img src="<{xoImgUrl img/image2.jpg}>" alt="" />
+			 <div class="info" >
+				<h2><a href="#" >Social networks and kids: How young is too young? </a></h2>
+				<p>A growing number of children are flouting minimum-age requirements on social-networking sites such as Facebook...<a href="#" >read more</a></p>
+			 </div>
+	    </div>
+
+	    <!-- Third Content -->
+	    <div id="fragment-3" class="ui-tabs-panel ui-tabs-hide" style="">
+			<img src="<{xoImgUrl img/image3.jpg}>" alt="" />
+			 <div class="info" >
+				<h2><a href="#" >Toyota Yaris - What the Auto Press Says</a></h2>
+				<p>The 2010 Toyota Yaris ranks 25 out of 36 Affordable Small Cars. This ranking is based on our analysis of 67 published reviews and test drives of the Toyota Yaris ....<a href="#" >read more</a></p>
+	         </div>
+	    </div>
+
+	    <!-- Fourth Content -->
+	    <div id="fragment-4" class="ui-tabs-panel ui-tabs-hide" style="">
+			<img src="<{xoImgUrl img/image4.jpg}>" alt="" />
+			 <div class="info" >
+				<h2><a href="#" >Olajuwon makes Bryant's dreams come true</a></h2>
+				<p>From the opposite end of the court, it looks as though the years have simply melted away. 
+				A head-fake here, a jab stab step there, a spin move that starts 
+				toward the baseline ....<a href="#" >read more</a></p>
+	         </div>
+	    </div>
+
+		</div>
+	</div></td>
+		</tr>
+	</table>
+</div>
+  
+  <table id="xo-canvas-content" cellspacing="0">
+    <tr > 
+
+
+    <td id="xo-page">
+		<!-- Display center blocks if any -->
+<{if $xoops_showcblock == 1}>
+  <table cellspacing="0" class="centercol">
+    <tr>
+      <td id="centerCcolumn" colspan="2">
+        <!-- Start center-center blocks loop -->
+<{foreach item=block from=$xoops_ccblocks}> <{include file="$xoops_theme/theme_blockcenter_c.html"}> <{/foreach}>
+        <!-- End center-center blocks loop -->      </td>
+    </tr>
+    <tr>
+      <td id="centerLcolumn">
+        <!-- Start center-left blocks loop -->
+<{foreach item=block from=$xoops_clblocks}> <{include file="$xoops_theme/theme_blockcenter_l.html"}> <{/foreach}>
+        <!-- End center-left blocks loop -->      </td>
+      <td id="centerRcolumn">
+        <!-- Start center-right blocks loop -->
+<{foreach item=block from=$xoops_crblocks}> <{include file="$xoops_theme/theme_blockcenter_r.html"}> <{/foreach}>
+        <!-- End center-right blocks loop -->      </td>
+    </tr>
+  </table>
+<{/if}>
+  <!-- End display center blocks -->
+  <div id="content"> <{$xoops_contents}> </div>
+<{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright or $xoBlocks.page_bottomcenter}>
+  <table cellspacing="0" class="centercol">
+<{if $xoBlocks.page_bottomcenter}>
+    <tr>
+      <td id="bottomCcolumn" colspan="2"> <{foreach from=$xoBlocks.page_bottomcenter item=block}><{include file="$xoops_theme/theme_blockcenter_c.html"}><{/foreach}> </td>
+    </tr>
+<{/if}> <{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright}>
+    <tr>
+      <td id="bottomLcolumn"> <{foreach from=$xoBlocks.page_bottomleft item=block}><{include file="$xoops_theme/theme_blockcenter_l.html"}><{/foreach}> </td>
+      <td id="bottomRcolumn"> <{foreach from=$xoBlocks.page_bottomright item=block}><{include file="$xoops_theme/theme_blockcenter_r.html"}><{/foreach}> </td>
+    </tr>
+<{/if}>
+  </table>
+<{/if}> 
+      </td>
+      		<!-- Start left blocks loop -->
+		  <{if $xoops_showlblock}>
+					<td id="xo-canvas-leftcolumn">
+					<{foreach item=block from=$xoops_lblocks}>
+          <{include file="$xoops_theme/theme_blockleft.html"}>
+        <{/foreach}>
+        <!-- End left blocks loop -->               
+					 </td>
+		 <{/if}>
+		<!-- End left blocks loop -->
+
+        <!-- Start right blocks loop -->
+		<{if $xoops_showrblock}>
+		<td id="xo-canvas-rightcolumn">
+        <{foreach item=block from=$xoops_rblocks}>
+          <{include file="$xoops_theme/theme_blockright.html"}>
+        <{/foreach}>
+        <!-- End right blocks loop -->      
+		</td>
+		<{/if}>
+        <!-- End right blocks loop -->	
+    </tr>
+  </table>
+</div>
+  <!-- Start footer -->
+<div id="footer">
+	<p><{$xoops_footer}> Designed by
+	<a target="_blank" href="http://www.maitsco.com">Maitsco</a></p>
+</div>
+  <!-- end Footer -->
+</body>
+</html>
